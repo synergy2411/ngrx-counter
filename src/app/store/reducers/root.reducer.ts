@@ -19,8 +19,8 @@ export function rootReducer(
       };
     case counterActions.DECREMENT:
       return {
-        counter: state.counter - 1,
         ...state,
+        counter: state.counter - 1,
       };
     case counterActions.ADD:
       return {
