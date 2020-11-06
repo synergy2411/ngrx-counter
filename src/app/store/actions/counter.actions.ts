@@ -3,7 +3,7 @@ export const INCREMENT = 'INCREMENT';
 export const DECREMENT = 'DECREMENT';
 export const ADD = 'ADD_COUNTER';
 export const SUBTRACT = 'SUBTRACT';
-
+export const STORE_RESULT = 'STORE_RESULT';
 
 // Action Creators
 
@@ -27,4 +27,9 @@ export class CounterSubtract {
   constructor(public value: number) {}
 }
 
-export type ActionTypes = CounterSubtract| CounterDecrement | CounterAdd | CounterIncrement;
+export class CounterStoreResult {
+  readonly type = STORE_RESULT;
+  constructor() {}
+}
+
+export type ActionTypes = CounterStoreResult | CounterSubtract| CounterDecrement | CounterAdd | CounterIncrement;

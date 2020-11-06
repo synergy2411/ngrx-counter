@@ -10,4 +10,21 @@
       <button class="btn btn-danger" (click) = "onSubtract(5)">Subtract by 5</button>
     </div>
   </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-4 col-md-4 offset-sm-4 offset-md-4">
+      <button class="btn btn-outline-warning btn-block" (click)="onStoreResult()">
+        Store Result
+      </button>
+      <br>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let r of results">
+            {{ r }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br>
+
+
 </div>
